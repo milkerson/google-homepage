@@ -1,10 +1,44 @@
 body {
 	background: white;
+	margin: 0;
+	padding: 0;
+}
+
+a	{
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#nav {
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 50px;
+	margin-right: 30px;
+	margin-top: 5px;
+}
+
+#nav ul {
+
+}
+
+#nav ul li {
+	float: left;
+}
+
+.box {
+	display: inline-block;
+	background: #f5f5f5;
+	padding: 7px 14px;
 }
 
 #content {
-	position: absolute;
-	top: 150px;
+	width: 700px;
+	margin: 250px auto 0 auto;
 }
 
 #doodle, #search_form {
@@ -13,12 +47,12 @@ body {
 
 #doodle {
 	color: blue;
-	font-size: 90px;
+	font-size: 120px;
 }
 
 #search_form form input {
-	width: 600px;
-	font-size: 20px;
+	width: 700px;
+	font-size: 30px;
 	border: 1px solid #cecece;
 }
 
@@ -30,11 +64,66 @@ body {
 	font-weight: bold;
 	background: #eaeaea;
 	border: 1px solid #b5b5b5;
-	border-radius: 2px;
+	border-radius: 3px;
 	width: 150px;
-	padding: 10px 7px;
+	padding: 10px 2px;
+	font-size: 14px;
 }
 
 #search_form form button:hover {
 	box-shadow: 0px 1px 1px #4e4e4e;
+}
+
+#footer {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	height: 50px;
+	background: #eaeaea;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+ul li {
+	display: inline;
+	list-style-type: none;
+	margin: 0 10px;
+	font-size: 18px;
+	font-family: sans-serif;	
+}
+
+#icon {
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	background: #c0b5ff	;
+	border-radius: 20px;
+	margin-top: 12px;
+}
+
+#sil {
+	width: 16px;
+	height: 16px;
+	background: #6853ed;
+	border-radius: 8px;
+	position: relative;
+	top: 6px;
+	left: 12px;
+}
+#sil2 {
+	width: 27px;
+	height: 14px;
+	background: #6853ed;
+	border-radius:27px;
+	position: relative;
+	top: 8px;
+	left: 7px;
 }
