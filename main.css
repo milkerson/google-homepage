@@ -2,15 +2,17 @@ body {
 	background: white;
 	margin: 0;
 	padding: 0;
+	font-size: 9px;
 }
 
 a	{
 	text-decoration: none;
-	color: black;
+	color: #5d5d5d;
 }
 
 a:hover {
 	text-decoration: underline;
+	color: #414141;
 }
 
 #nav {
@@ -19,16 +21,19 @@ a:hover {
 	top: 0;
 	height: 50px;
 	margin-right: 30px;
-	margin-top: 5px;
+	margin-top: 20px;
 }
 
-#nav ul {
-
+#nav ul a {
+    display: block;
 }
 
-#nav ul li {
+#navlist ul li, #navlist a {
 	float: left;
+	display: inline-block;
+	margin-top: 2px;
 }
+
 
 .box {
 	display: inline-block;
@@ -36,9 +41,13 @@ a:hover {
 	padding: 7px 14px;
 }
 
+.box:hover {
+	background: #eaeaea;
+}
+
 #content {
 	width: 700px;
-	margin: 250px auto 0 auto;
+	margin: 230px auto 0 auto;
 }
 
 #doodle, #search_form {
@@ -51,37 +60,60 @@ a:hover {
 }
 
 #search_form form input {
-	width: 700px;
-	font-size: 30px;
-	border: 1px solid #cecece;
+	margin-top: -2px;
+	width: 660px;
+	height: 30px;
+	font-size: 18px;
+	padding: 2px 12px;
+	border: 1px solid #e0e0e0;
 }
 
 #search_form form input:hover {
 	border: 1px solid #a3a3a3;
 }
 
-#search_form form button {
+#search_form form input:focus {
+	border: 1px solid #8080ff;
+	outline: none;
+}
+
+button {
+	font-family: Arial;
 	font-weight: bold;
-	background: #eaeaea;
-	border: 1px solid #b5b5b5;
-	border-radius: 3px;
-	width: 150px;
-	padding: 10px 2px;
-	font-size: 14px;
+	background: #f2f2f2;
+	border: 1px solid #e0e0e0;
+	border-radius: 2px;
+	padding: 9px;
+	font-size: 13px;
+	margin-left: 8px;
+	margin-right: 7px;
+	margin-top: 0px;
 }
 
 #search_form form button:hover {
 	box-shadow: 0px 1px 1px #4e4e4e;
 }
 
+#button_group {
+	margin-top: 18px;
+}
+
+
 #footer {
 	margin: 0;
 	padding: 0;
 	position: fixed;
 	bottom: 0px;
+	left: 0px;
 	width: 100%;
-	height: 50px;
-	background: #eaeaea;
+	height: 48px;
+	border-top: 1px solid #e0e0e0;
+	background: #f1f1f1;
+	padding: 0 19px;
+}
+
+#footer ul {
+	padding: 5px 36px 0 0;
 }
 
 .left {
@@ -95,8 +127,8 @@ a:hover {
 ul li {
 	display: inline;
 	list-style-type: none;
-	margin: 0 10px;
-	font-size: 18px;
+	margin: 0 18px;
+	font-size: 16px;
 	font-family: sans-serif;	
 }
 
@@ -106,7 +138,7 @@ ul li {
 	display: inline-block;
 	background: #c0b5ff	;
 	border-radius: 20px;
-	margin-top: 12px;
+	margin-top: 0px;
 }
 
 #sil {
