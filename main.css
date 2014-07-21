@@ -24,16 +24,20 @@ a:hover {
 	margin-top: 20px;
 }
 
-#nav ul a {
-    display: block;
-}
-
-#navlist ul li, #navlist a {
+#nav ul li {
 	float: left;
-	display: inline-block;
-	margin-top: 2px;
+	margin-right: 3px;
 }
 
+#nav img {
+	position: relative;
+	top: 2px;
+}
+
+.text {
+	position: relative;
+	top: 7px;
+}
 
 .box {
 	display: inline-block;
@@ -43,6 +47,21 @@ a:hover {
 
 .box:hover {
 	background: #eaeaea;
+	text-decoration: none;
+}
+
+.circle {
+	width: 32px;
+	height: 32px;
+	display: block;
+	border-radius: 16px;
+	box-sizing:border-box;
+	background-image: url("images/blueperson.png");
+	overflow: hidden;
+}
+
+.circle:hover {
+	box-shadow: inset 0px 2px 3px dimgray;
 }
 
 #content {
@@ -91,7 +110,8 @@ button {
 }
 
 #search_form form button:hover {
-	box-shadow: 0px 1px 1px #4e4e4e;
+	border-color: #e0e0e0;
+	box-shadow: 0px 1px 1px #e0e0e0;
 }
 
 #button_group {
@@ -130,32 +150,4 @@ ul li {
 	margin: 0 18px;
 	font-size: 16px;
 	font-family: sans-serif;	
-}
-
-#icon {
-	width: 40px;
-	height: 40px;
-	display: inline-block;
-	background: #c0b5ff	;
-	border-radius: 20px;
-	margin-top: 0px;
-}
-
-#sil {
-	width: 16px;
-	height: 16px;
-	background: #6853ed;
-	border-radius: 8px;
-	position: relative;
-	top: 6px;
-	left: 12px;
-}
-#sil2 {
-	width: 27px;
-	height: 14px;
-	background: #6853ed;
-	border-radius:27px;
-	position: relative;
-	top: 8px;
-	left: 7px;
 }
